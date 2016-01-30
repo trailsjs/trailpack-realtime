@@ -1,0 +1,51 @@
+{
+  "name": "trailpack-realtime",
+  "version": "0.0.1",
+  "description": "Realtime Trailpack. Synchronize the client and server via WebSockets",
+  "homepage": "http://www.trailsjs.io/",
+  "author": "Trails.js Team <hello@trailsjs.io>",
+  "files": [
+    "lib"
+  ],
+  "contributors": [
+    {
+      "name": "Travis Webb",
+      "url": "https://github.com/tjwebb"
+    },
+    {
+      "name": "Alex Clavelle",
+      "url": "https://github.com/aclave1"
+    }
+  ],
+  "main": "index.js",
+  "keywords": [
+    "trailpack",
+    "trails",
+    "trailjs"
+  ],
+  "dependencies": {
+    "bluebird": "^3.1.1",
+    "engine.io": "^1.6.7",
+    "primus": "^4.0.4",
+    "trailpack": "latest"
+  },
+  "devDependencies": {
+    "eslint-config-trails": "latest",
+    "eslint": "^1.10",
+    "mocha": "^2.3"
+  },
+  "bundledDependencies": [
+    "trailpack"
+  ],
+  "scripts": {
+    "test": "eslint . && mocha"
+  },
+  "engines": {
+    "node": ">= 4.0.0"
+  },
+  "eslintConfig": {
+    "extends": "trails"
+  },
+  "repository": "git@github.com:trailsjs/trailpack-realtime",
+  "license": "MIT"
+}
