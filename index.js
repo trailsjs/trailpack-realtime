@@ -20,8 +20,8 @@ module.exports = class Realtime extends Trailpack {
   initialize () {
     return new Promise((res,rej)=>{
       this.app.once('webserver:http:ready',(httpServer)=>{
-        this.app.sockets = new Primus(this.server,primusDefaults)
-        res()
+        this.app.sockets = new Primus(httpServer,primusDefaults);
+        res();
       })
     })
   }
