@@ -1,8 +1,7 @@
 'use strict'
-
-const Promise = require('bluebird');
 const Trailpack = require('trailpack')
 const Primus = require('primus');
+const _ = require('lodash');
 
 const primusDefaults = {
   transformer:'engine.io'
@@ -20,7 +19,8 @@ module.exports = class Realtime extends Trailpack {
   initialize () {
     return new Promise((res,rej)=>{
       this.app.once('webserver:http:ready',(httpServer)=>{
-        this.app.sockets = new Primus(httpServer,primusDefaults)
+        const primusConfig = _.get(this.app.config,'realtime.primus',{options:{}})
+        this.app.sockets = new Primus(httpServer,Object.assign(primusDefaults,primusConfig.options))
         res()
       })
     })
