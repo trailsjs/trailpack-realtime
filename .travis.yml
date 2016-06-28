@@ -16,7 +16,7 @@ deploy:
   provider: npm
   email: hello@trailsjs.io
   api_key:
-    secure: d/VChdWWPr8Mi6UyRUjIhjEfXHoyTCJ0z/pyNzF3yd2vpvC07fK90ka0CPxHhKyPWj7h7+ZG0FO0U8wj4YAZ8QeKIuc5rZbe1wI5yISpbnVxDKk0tYqyDFCRbmXVu7RNeLbBPN6y3fbJYdCLM14ugTfaJaBdewVTeOFGFBA712vHwu8ptWW/zw72YbH9d6C+LnAyz17ZyeAG7BvABISKv+bzuYexFaw4gv/uGNp2o//zC4FlXNcVWR3hb/cS6SWWoiPdsOZvDJTY+2J+WSEMlZ+PIZaJjfki4RbisoIg5Q3KM/WhgXwRfgma4POrGSqXvg8Yy1lqTIoZJT1SEnIj+KIOHuLoI+Rv1hc3n+Aw5Q2iMSPo/QlbolhfOhmGRkx5XIxIlKs/Vf6GJGQBf2lB5W2tgdf3UYwGbXjWOUoj+4NBotWQ4vaHlwfJb9sm66yXG9ayDkgc8Gegj6ooRC+xl8irgu/xgtSMKek6I893r/sLTnAkYcrLMUSqOp9qMBk8Zfdir978yKx4pTPBJvlnilze+cdSNMSXokKMDNF4wbaDVCyaFsoYEYNW/basaKynBiPgi4exjWH1SlXBOKA+LTr8i9ZwdGNIRDx3mxTiUHvwaYbn9tHOt8ymEwTfFe90a2XDp0+sUKEtLT+i6jF41iFQq0b/OwzWnQf3GfcDyYY=
+    secure: TODO
   on:
     tags: true
     repo: trailsjs/trailpack-realtime
