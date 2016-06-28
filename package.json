@@ -24,21 +24,17 @@
     "trailjs"
   ],
   "dependencies": {
-    "bluebird": "^3.1.1",
     "engine.io": "^1.6.7",
     "primus": "^4.0.4",
-    "trailpack": "latest"
+    "trailpack": "^1.0.4"
   },
   "devDependencies": {
-    "eslint-config-trails": "latest",
-    "eslint": "^1.10",
+    "eslint": "^2.13.1",
+    "eslint-config-trails": "^1.0.7",
     "mocha": "^2.3"
   },
-  "bundledDependencies": [
-    "trailpack"
-  ],
   "scripts": {
-    "test": "eslint . && mocha"
+    "test": "eslint ."
   },
   "engines": {
     "node": ">= 4.0.0"
