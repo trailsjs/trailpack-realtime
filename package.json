@@ -4,9 +4,6 @@
   "description": "Realtime Trailpack. Synchronize the client and server via WebSockets",
   "homepage": "http://www.trailsjs.io/",
   "author": "Trails.js Team <hello@trailsjs.io>",
-  "files": [
-    "lib"
-  ],
   "contributors": [
     {
       "name": "Travis Webb",
@@ -21,7 +18,9 @@
   "keywords": [
     "trailpack",
     "trails",
-    "trailjs"
+    "trailjs",
+    "sockets",
+    "primus"
   ],
   "dependencies": {
     "engine.io": "^1.6.7",
