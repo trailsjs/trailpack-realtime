@@ -3,7 +3,6 @@ node_js:
 - 4
 - 5
 - 6
-
 notifications:
   email: false
   webhooks:
@@ -11,12 +10,11 @@ notifications:
     - https://webhooks.gitter.im/e/54f8a1e753f859f5ca1a
     on_start: never
     on_failure: change
-
 deploy:
   provider: npm
   email: hello@trailsjs.io
   api_key:
-    secure: TODO
+    secure: uRnIMDUIc+c9p77Xy+vPKQH90aQ/MyjW9P1sawoVCSW/50nli15NXnneiqm+0ghbIwkbOcFEMKoi9XRXqMvOSi6f5ucfkfCf/OwhbsIJzFcF6Vla/x9jbMj8eCV4AC8nQC3X8BHtG1TtumwdAwGEjRkShRCZOKBKEg/pH+1dSjrzGeYkyvkzxx5PbeQoPNuPZ9Fy9NBljeJ5DHT867ITtn3qLK6oJF1AqxO3tWsPNLMjxdnsXcY1WprBwioK9B8M8bE0CWDIPZachOuIm2UM/8wzmeEifS54rOTWDD75O9r7y3pUGLb0gbWpybjkXCbUsxRtjcLCRx6N6BuPOjHkbz0ps3cqsrzMdlrSQAF5oiC2x7qFlTybeVYtippVrO4E0yHaa7HhpZ8WsDHCq2dK4Pjc4GKB3pR1RP37godrIU9clqZWg8OODaG9oQN+U1ZxTKSHi3IIPzndHhNkOPki7r6b2rq+lHGhb4NJB2FOjMUUU5Fv5Xeg5WGqcIwpttlwqiWfWMJeL76kdPHSJK7GxsjMpcEQ7SqPlLibnSJnR/spT0oHnCFRLknkhFZ6k7Mql9rLXQsJHYpEjKgyUeRU97Qf/d/iKjtiQzhm6V+TXR7Yx6kxztMF0GHZuDf+NLuiDR5dcr4qpSmcN/z5qtNyMsJgrT35qL4AaHioFDTPbT4=
   on:
     tags: true
     repo: trailsjs/trailpack-realtime
