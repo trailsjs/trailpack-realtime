@@ -1,6 +1,6 @@
 {
   "name": "trailpack-realtime",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Realtime Trailpack. Synchronize the client and server via WebSockets",
   "homepage": "http://www.trailsjs.io/",
   "author": "Trails.js Team <hello@trailsjs.io>",
