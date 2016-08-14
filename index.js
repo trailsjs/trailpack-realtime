@@ -19,8 +19,10 @@ module.exports = class Realtime extends Trailpack {
   initialize () {
     return new Promise((res,rej)=>{
       this.app.once('webserver:http:ready',(httpServer)=>{
+        const relevantServer = _.has(httpServer, 'listener') ? httpServer.listener : httpServer
+
         const primusConfig = _.get(this.app.config,'realtime.primus',{options: {}})
-        this.app.sockets = new Primus(httpServer,Object.assign(primusDefaults,primusConfig.options))
+        this.app.sockets = new Primus(relevantServer, Object.assign(primusDefaults,primusConfig.options))
         res()
       })
     })
