@@ -3,6 +3,7 @@ node_js:
 - 4
 - 5
 - 6
+- 7
 notifications:
   email: false
   webhooks:
@@ -18,4 +19,4 @@ deploy:
   on:
     tags: true
     repo: trailsjs/trailpack-realtime
-    node: 6
+    node: 7
