@@ -28,7 +28,7 @@
   ],
   "dependencies": {
     "engine.io": "^1.8.2",
-    "primus": "^6.0.3",
+    "primus": "^6.0.9",
     "trailpack": "^2.1.0"
   },
   "devDependencies": {
