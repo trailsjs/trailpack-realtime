@@ -27,11 +27,17 @@
     "primus"
   ],
   "dependencies": {
-    "engine.io": "^1.8.2",
-    "primus": "^6.0.9",
+    "trailpack": "^2.1.0"
+  },
+  "peerDependencies": {
+    "primus": ">= 6"
+  },
+  "dependencies": {
     "trailpack": "^2.1.0"
   },
   "devDependencies": {
+    "engine.io": "^1.8.2",
+    "primus": "^6.0.9",
     "eslint": "^3.13.1",
     "eslint-config-trails": "^2.0.6",
     "mocha": "^3.2.0"
