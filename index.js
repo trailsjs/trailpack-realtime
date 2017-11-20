@@ -8,28 +8,30 @@ const primusDefaults = {
 }
 
 module.exports = class Realtime extends Trailpack {
-  validate () {
+  validate() {
     return Promise.resolve()
   }
 
-  configure () {
+  configure() {
     return Promise.resolve()
   }
 
-  initialize () {
-    return new Promise((res,rej)=>{
-      this.app.once('webserver:http:ready',(httpServer)=>{
-        const primusConfig = _.get(this.app.config,'realtime.primus',{options: {}})
-        this.app.sockets = new Primus(httpServer,Object.assign(primusDefaults,primusConfig.options))
+  initialize() {
+    return new Promise((res, rej) => {
+      this.app.once('webserver:http:ready', (httpServer) => {
+        if (Array.isArray(httpServer)) {
+          httpServer = httpServer[0]
+        }
+        const primusConfig = _.get(this.app.config, 'realtime.primus', { options: {} })
+        this.app.sockets = new Primus(httpServer, Object.assign(primusDefaults, primusConfig.options))
         res()
       })
     })
   }
 
-  constructor (app) {
+  constructor(app) {
     super(app, {
       config: require('./config'),
-      api: require('./api'),
       pkg: require('./package')
     })
   }
